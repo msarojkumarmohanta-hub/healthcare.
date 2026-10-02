@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "status": "needs_input",
+  "services": [
+    {
+      "id": "frontend",
+      "type": "frontend",
+      "name": "RuralCare AI",
+      "description": "React + Vite + Tailwind healthcare frontend for rural care workflows.",
+      "questions": [
+        {
+          "header": "Frontend language",
+          "question": "Which language should the frontend use?",
+          "multiSelect": false,
+          "recommendedChoice": "TypeScript",
+          "answer": "TypeScript",
+          "options": [
+            { "label": "TypeScript", "description": "Typed React development with strong editor support." },
+            { "label": "JavaScript", "description": "Standard React development without static typing." }
+          ],
+          "allowFreeformInput": false,
+          "status": "inferred"
+        },
+        {
+          "header": "Frontend framework",
+          "question": "Which frontend framework and styling approach should be used?",
+          "multiSelect": false,
+          "recommendedChoice": "React + Vite + Tailwind CSS",
+          "answer": "React + Vite + Tailwind CSS",
+          "options": [
+            { "label": "React + Vite + Tailwind CSS", "description": "Fast client-side React app with utility-first styling." }
+          ],
+          "allowFreeformInput": true,
+          "status": "inferred"
+        },
+        {
+          "header": "Frontend features",
+          "question": "Describe the required frontend features and interaction model.",
+          "multiSelect": false,
+          "recommendedChoice": "RuralCare AI healthcare dashboard with patient triage, symptom intake, appointment and care-plan views, accessible responsive UI, and demo-mode mock data with local interactions.",
+          "answer": "RuralCare AI healthcare dashboard with patient triage, symptom intake, appointment and care-plan views, accessible responsive UI, and demo-mode mock data with local interactions.",
+          "status": "inferred"
+        }
+      ]
+    }
+  ],
+  "sharedQuestions": [
+    {
+      "header": "Data stores",
+      "question": "Which data stores are required?",
+      "multiSelect": true,
+      "recommendedChoice": ["No datastore required"],
+      "answer": ["No datastore required"],
+      "options": [
+        { "label": "No datastore required", "description": "Use local mock data and in-memory state only.", "exclusive": true },
+        { "label": "PostgreSQL", "description": "Relational persistent application data." },
+        { "label": "Blob Storage", "description": "Files, images, documents, or media." }
+      ],
+      "allowFreeformInput": false,
+      "status": "inferred"
+    },
+    {
+      "header": "Authentication",
+      "question": "Do users need to sign in to access application API features?",
+      "multiSelect": false,
+      "recommendedChoice": "No",
+      "answer": "No",
+      "options": [
+        { "label": "Yes", "description": "Require sign-in for application API access." },
+        { "label": "No", "description": "Use an unauthenticated demo frontend." }
+      ],
+      "allowFreeformInput": false,
+      "status": "inferred"
+    }
+  ],
+  "rationale": "The request specifies a complete React + Vite + Tailwind healthcare frontend named RuralCare AI, with no backend or persistence requirements. Defaults are inferred for review because the workspace is empty and the supplied scope is already detailed."
+}

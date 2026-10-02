@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+node_modules/
+dist/
+.parcel-cache/
+coverage/
+.DS_Store
